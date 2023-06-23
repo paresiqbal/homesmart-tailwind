@@ -15,13 +15,13 @@
         class="focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity">
         <img src="./assets//logo.svg" alt="Homesmart logo" width="200" class="w-48 md:w-64 lg:72">
       </a>
-      <button id="menu" class="lg:hidden focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">
+      <button id="menu" aria-expanded="false" aria-label="Open menu" class="lg:hidden focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
-      <div role="menubar" class="flex flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center p-6 text-lg font-semibold items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
+      <div role="menubar" class="hidden flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center p-6 text-lg font-semibold items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
         <a href="/" role="menuitem" class="py-1 px-6 text dark:text-neutral-600 focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">Home</a>
         <a href="/" role="menuitem" class="py-1 px-6 text lg:mr-auto dark:text-neutral-600 focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">Contact</a>
         <a href="/" role="menuitem" class="py-1 px-6 text dark:text-neutral-600 focus: outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">Login</a>
@@ -31,6 +31,7 @@
     </div>
   </nav>
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/navbar.js"></script>
 </body>
 
 </html>
